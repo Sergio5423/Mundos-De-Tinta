@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testExecutions version="1">
+  <file path="C:\Users\starr\Documents\Github\Mundos-De-Tinta\Backend\test\ventas.test.js">
+    <testCase name="Cargar registros" duration="190"/>
+    <testCase name="Registrar Venta" duration="3">
+      <failure message="Error: expect(received).resolves.toBeTruthy()"><![CDATA[Error: expect(received).resolves.toBeTruthy()
+
+Received promise rejected instead of resolved
+Rejected to value: [Error: Datos de entrada inválidos]
+    at expect (C:\Users\starr\Documents\Github\Mundos-De-Tinta\node_modules\expect\build\index.js:113:15)
+    at Object.expect (C:\Users\starr\Documents\Github\Mundos-De-Tinta\Backend\test\ventas.test.js:22:11)
+    at Promise.then.completed (C:\Users\starr\Documents\Github\Mundos-De-Tinta\node_modules\jest-circus\build\utils.js:298:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (C:\Users\starr\Documents\Github\Mundos-De-Tinta\node_modules\jest-circus\build\utils.js:231:10)
+    at _callCircusTest (C:\Users\starr\Documents\Github\Mundos-De-Tinta\node_modules\jest-circus\build\run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\starr\Documents\Github\Mundos-De-Tinta\node_modules\jest-circus\build\run.js:252:3)
+    at _runTestsForDescribeBlock (C:\Users\starr\Documents\Github\Mundos-De-Tinta\node_modules\jest-circus\build\run.js:126:9)
+    at run (C:\Users\starr\Documents\Github\Mundos-De-Tinta\node_modules\jest-circus\build\run.js:71:3)
+    at runAndTransformResultsToJestFormat (C:\Users\starr\Documents\Github\Mundos-De-Tinta\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at jestAdapter (C:\Users\starr\Documents\Github\Mundos-De-Tinta\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at runTestInternal (C:\Users\starr\Documents\Github\Mundos-De-Tinta\node_modules\jest-runner\build\runTest.js:367:16)
+    at runTest (C:\Users\starr\Documents\Github\Mundos-De-Tinta\node_modules\jest-runner\build\runTest.js:444:34)
+    at Object.worker (C:\Users\starr\Documents\Github\Mundos-De-Tinta\node_modules\jest-runner\build\testWorker.js:106:12)]]></failure>
+    </testCase>
+  </file>
+  <file path="C:\Users\starr\Documents\Github\Mundos-De-Tinta\Backend\test\productos.test.js">
+    <testCase name="Cargar productos" duration="186"/>
+    <testCase name="Registrar Producto" duration="8"/>
+    <testCase name="Modificar Cargamento" duration="3">
+      <failure message="Error: expect(received).resolves.toBeTruthy()"><![CDATA[Error: expect(received).resolves.toBeTruthy()
+
+Received promise rejected instead of resolved
+Rejected to value: [TypeError: ventas.productos is not iterable]
+    at expect (C:\Users\starr\Documents\Github\Mundos-De-Tinta\node_modules\expect\build\index.js:113:15)
+    at Object.expect (C:\Users\starr\Documents\Github\Mundos-De-Tinta\Backend\test\productos.test.js:19:11)
+    at Promise.then.completed (C:\Users\starr\Documents\Github\Mundos-De-Tinta\node_modules\jest-circus\build\utils.js:298:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (C:\Users\starr\Documents\Github\Mundos-De-Tinta\node_modules\jest-circus\build\utils.js:231:10)
+    at _callCircusTest (C:\Users\starr\Documents\Github\Mundos-De-Tinta\node_modules\jest-circus\build\run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\starr\Documents\Github\Mundos-De-Tinta\node_modules\jest-circus\build\run.js:252:3)
+    at _runTestsForDescribeBlock (C:\Users\starr\Documents\Github\Mundos-De-Tinta\node_modules\jest-circus\build\run.js:126:9)
+    at run (C:\Users\starr\Documents\Github\Mundos-De-Tinta\node_modules\jest-circus\build\run.js:71:3)
+    at runAndTransformResultsToJestFormat (C:\Users\starr\Documents\Github\Mundos-De-Tinta\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at jestAdapter (C:\Users\starr\Documents\Github\Mundos-De-Tinta\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at runTestInternal (C:\Users\starr\Documents\Github\Mundos-De-Tinta\node_modules\jest-runner\build\runTest.js:367:16)
+    at runTest (C:\Users\starr\Documents\Github\Mundos-De-Tinta\node_modules\jest-runner\build\runTest.js:444:34)
+    at Object.worker (C:\Users\starr\Documents\Github\Mundos-De-Tinta\node_modules\jest-runner\build\testWorker.js:106:12)]]></failure>
+    </testCase>
+    <testCase name="Eliminar Cargamento" duration="6"/>
+  </file>
+  <file path="C:\Users\starr\Documents\Github\Mundos-De-Tinta\Backend\test\empleados.test.js">
+    <testCase name="Cargar empleados" duration="179"/>
+    <testCase name="Agrega el empleado" duration="53"/>
+    <testCase name="Modificar Empleado" duration="16"/>
+    <testCase name="Remover empleado" duration="12"/>
+  </file>
+</testExecutions>
