@@ -13,14 +13,8 @@
     "jest-sonar-reporter": "^2.0.0"
   },
   "jest": {
-    "testEnvironment": "node",
     "collectCoverage": true,
     "coverageDirectory": "coverage",
-    "testResultsProcessor": "jest-sonar-reporter",
-    "coveragePathIgnorePatterns": [
-      "/node_modules/",
-      "/test/"
-    ],    
     "coverageReporters": [
       "lcov",
       "text"

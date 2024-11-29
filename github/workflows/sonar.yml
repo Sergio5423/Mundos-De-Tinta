@@ -18,7 +18,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '20.16.0' # Ajusta según tu proyecto
+          node-version: '20.x'
 
       - name: Install dependencies
         run: npm install
@@ -26,10 +26,14 @@ jobs:
       - name: Run tests with coverage
         run: npm test -- --coverage
 
+      - name: Verify coverage file
+        run: test -f coverage/lcov.info && echo "Coverage file found!" || echo "Coverage file missing."
+
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@v2
         with:
           args: >
             -Dsonar.projectKey=tu-llave-de-proyecto
             -Dsonar.organization=tu-organizacion
+            -Dsonar.javascript.lcov.reportPaths=coverage/lcov.info
             -Dsonar.login=${{ secrets.SONAR_TOKEN }}
