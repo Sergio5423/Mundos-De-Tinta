@@ -1,0 +1,77 @@
+#Panel1 {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    min-height: 100vh;
+    background-position: center;      
+    background-size: cover;          
+    top: 90px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+#contenedor1 {
+    position: relative; 
+    background-color: rgb(217, 217, 217);
+    padding: 1%;
+    margin-top: 40px;
+    min-height: 500px;
+    min-width: 1210px;
+    border-radius: 2%;
+}
+
+#top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    background-color: transparent;    
+}
+
+#txt1{    
+    padding-left: 30px;
+    font-weight: bold;
+}
+
+input{
+    margin-top: 10px;
+    margin-right: 50px;
+    font-size: larger;
+    font-family: "Playfair Display", serif;  
+    border-radius: 10%;
+    border: none;
+    background-color: rgb(79, 81, 82);  
+    height: 30px;
+}
+
+#btn-Buscar{
+    margin-right: 50px;    
+    font-size: larger;
+    font-family: "Playfair Display", serif;
+    border: none;
+    border-radius: 20%;
+    background-color: rgb(79, 81, 82);
+    width: 40px;
+    height: 40px;
+}
+
+#bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    position: fixed;
+    bottom: 25px;
+    right: 25px;          
+}
+
+#btn-Inf{
+    margin-right: 20px;    
+    font-size: larger;
+    font-family: "Playfair Display", serif;
+    border: none;
+    border-radius: 20%;
+    background-color: rgb(79, 81, 82);
+    width: 40px;
+    height: 40px;       
+}

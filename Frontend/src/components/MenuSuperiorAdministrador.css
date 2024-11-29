@@ -1,0 +1,133 @@
+#MenuSuperior {
+  display: inline;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  border: 2px solid rgb(0, 0, 0);
+  background-color: rgb(217, 217, 217);
+}
+
+#botones {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espacio entre botones */
+}
+
+#Nombre {
+  position: absolute;
+  top: 0;
+  padding-left: 170px;
+}
+
+#btn-1 {
+  height: 80px;
+  width: 150px;
+  border-left: 2px solid rgb(0, 0, 0);
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 0;
+  background-color: rgb(217, 217, 217);
+  font-size: 20px;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: normal;
+}
+
+#btn-1:active {
+  background-color: rgb(96, 65, 51);
+}
+
+#btn-2 {
+  height: 80px;
+  width: 150px;
+  border-left: 2px solid rgb(0, 0, 0);
+  border-top: 0;
+  border-right: 10;
+  border-bottom: 0;
+  background-color: rgb(217, 217, 217);
+  font-size: 20px;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: normal;
+}
+
+#btn-2:active {
+  background-color: rgb(96, 65, 51);
+}
+
+.logo {
+  height: 80px;
+  padding-left: 10px;
+}
+
+.Btn {
+  --black: #000000;
+  --ch-black: #141414;
+  --eer-black: #1b1b1b;
+  --night-rider: #2e2e2e;
+  --white: #ffffff;
+  --af-white: #f3f3f3;
+  --ch-white: #e1e1e1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition-duration: 0.3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+  background-color: var(--night-rider);
+  margin-right: 4%;
+} /* plus sign */
+.sign {
+  width: 100%;
+  transition-duration: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sign svg {
+  width: 17px;
+}
+.sign svg path {
+  fill: var(--af-white);
+} /* text */
+.text {
+  position: absolute;
+  right: -10%;
+  width: 0%;
+  opacity: 0;
+  color: var(--af-white);
+  font-size: 1.2em;
+  font-weight: 600;
+  transition-duration: 0.3s;
+} /* hover effect on button width */
+.Btn:hover {
+  width: 125px;
+  border-radius: 5px;
+  transition-duration: 0.3s;
+}
+.Btn:hover .sign {
+  width: 30%;
+  transition-duration: 0.3s;
+  padding-left: 20px;
+} /* hover effect button's text */
+.Btn:hover .text {
+  opacity: 1;
+  width: 70%;
+  transition-duration: 0.3s;
+  padding-right: 10px;
+} /* button click effect */
+.Btn:active {
+  transform: translate(2px, 2px);
+}

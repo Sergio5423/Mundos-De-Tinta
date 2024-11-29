@@ -1,0 +1,65 @@
+#btn-categorias {    
+    height: 80px;
+    width: 150px;
+    border-left: 2px solid rgb(0, 0, 0);
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0;
+    background-color: rgb(217, 217, 217);
+    font-size: 20px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: normal;
+}
+
+#btn-productos {
+    height: 80px;
+    width: 150px;
+    border-left: 2px solid rgb(0, 0, 0);
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0;
+    background-color: rgb(217, 217, 217);
+    font-size: 20px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: normal;
+}
+
+#Fondo2 {    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(../Fondo2.jpg) no-repeat;
+    background-position: center;      
+    background-size: cover;          
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: none;
+    position: fixed;
+}
+
+#bottom2 {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding-left: 20px;
+}
+
+#txt-OrganizaTusVentas {
+    padding: 10px 10px 10px 10px;
+    border-style: double;
+    border-color: black;
+    background-color: rgb(96, 65, 51);
+    color: beige;
+    font-size: 90px;
+}
+
+#txt-Portal {
+    font-weight: bold;
+}

@@ -1,0 +1,40 @@
+#factura {
+    border-style: solid;
+    border-color: black;
+    position: relative;
+    top: 30px;
+    background-color: rgb(217, 217, 217);
+    min-height: 400px;
+    min-width: 500px;
+    border-radius: 2%;
+}   
+
+#txt-factura {
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+#titulos {
+    display: flex;
+    justify-content: space-between;
+}
+
+#productos {
+    display: flex;
+    justify-content: space-between;
+}
+
+#cuerpoRecibo {
+    padding-right: 40px;
+    padding-left: 30px;
+}
+
+#total {
+    display: flex;
+}
+
+#txt-Total {
+    padding-right: 20px;
+}

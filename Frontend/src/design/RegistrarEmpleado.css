@@ -1,0 +1,27 @@
+#Ingresos{
+    display: flex;
+    justify-content: space-between;    
+    padding-top: 10px;
+}
+
+#ingresos1{
+    display: flex;
+    padding-left: 30px;
+}
+
+#ingresos2{
+    display: flex;
+    padding-right: 50px;
+}
+
+#h-nombre{
+    padding-right: 55px;
+}
+
+#h-direccion{
+    padding-right: 40px;
+}
+
+#h-telefono{
+    padding-right: 51px;
+}

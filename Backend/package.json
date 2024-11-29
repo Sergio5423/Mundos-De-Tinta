@@ -1,0 +1,27 @@
+{
+    "name": "MundosDeTinta",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest",
+        "start": "node index.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "bcrypt": "^5.1.1",
+        "cors": "^2.8.5",
+        "express": "^4.19.2",
+        "express-load": "^1.1.16",
+        "jsonwebtoken": "^9.0.2",
+        "mysql": "^2.18.1",
+        "mysql2": "^3.9.7",
+        "sequelize": "^6.37.3",
+        "sequelize-auto": "^0.8.8"
+    },
+    "devDependencies": {
+        "jest": "^29.7.0"
+    }
+}

@@ -1,0 +1,145 @@
+#MenuSuperiorAdministrador {      
+    display: inline;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(217, 217, 217);    
+}
+
+#botones {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#selector {
+    width: 100px;
+}
+
+#Nombre {
+    position: absolute;
+    top: 0;    
+    padding-left: 190px;    
+}
+
+#btn-departamentos {    
+    height: 80px;
+    width: 150px;
+    border-left: 2px solid rgb(0, 0, 0);
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0;
+    background-color: rgb(217, 217, 217);
+    font-size: 20px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: normal;
+}
+
+#btn-empleados {
+    height: 80px;
+    width: 150px;
+    border-left: 2px solid rgb(0, 0, 0);
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0;
+    background-color: rgb(217, 217, 217);
+    font-size: 20px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.logo {
+    height: 80px;  
+    padding-left: 10px;          
+}
+
+h1 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: normal;
+}
+
+h2 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: normal;
+}
+
+#TituloYFecha {
+    position: relative;
+    top: 80px;
+    left: 15px;
+}
+
+#TituloYFecha #Analiticas {
+    margin-bottom: 40px;
+}
+
+#Panel {
+    position: relative;
+    top: 80px;
+    left: -8px;
+    display: flex;    
+    justify-content: space-between;    
+}
+
+#dv {
+    width: 420px;
+    height: 330px;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 80px;
+    padding-right: 20px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    background-color: rgb(217, 217, 217);
+}
+
+#Panel #dv-tabla {
+    width: 750px;
+    height: 330px;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 80px;
+    padding-right: 20px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    background-color: rgb(217, 217, 217);
+}
+
+/* Estilos nuevos para el filtro de fecha */
+#fecha-filtro {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#fecha-filtro label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+#fecha-filtro input {
+    width: 150px;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 20px;
+}
+
+.pie-chart {
+    width: 800px !important; /* Ajusta el tamaño de la gráfica */
+    height: 800px !important; /* Ajusta el tamaño de la gráfica */
+}
