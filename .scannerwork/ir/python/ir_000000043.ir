@@ -1,0 +1,77 @@
+
+ 
+
+_transformflatted._transform?knownV V(inputV V(valueV V("knownV V(inputV V(valueV V(""~1
+/
+W W("
+	_is_arrayflatted._is_array*+
+)
+W W("
+#bool##bool# *2bool"
+W W( *W W("‹:
+8
+X X(output"
+#new-object##new-object#2list;
+9
+Y [("
+iterbuiltins.iter(*2typing.Iterator
+Y [("‚3
+1
+] ](" 
+
+_is_objectflatted._is_object*+
+)
+] ]("
+#bool##bool# *2bool"
+] ]( *] ]("Õ*output*input*known6
+4
+Y [("#
+
+__has_nextbuiltins.__has_next(*+
+)
+Y Y(	"
+#bool##bool# *2bool"
+Y Y(	 *Y Y((8"š/
+-
+Z Z(5
+val"
+nextbuiltins.next(*/
+-
+Z Z(4"
+_relateflatted._relate*
+,
+*
+Z Z(5"
+append (*2NoneType8("
+[ [("ˆ7
+5
+^ ^(obj"
+#new-object##new-object#2dict;
+9
+_ a("
+iterbuiltins.iter(*2typing.Iterator
+_ a("
+c c("ë*obj	*value	*input	*known	6
+4
+_ a("#
+
+__has_nextbuiltins.__has_next(*+
+)
+_ _("
+#bool##bool# *2bool"
+_ _(	 
+*_ _((8"Ó	/
+-
+` `(8key"
+nextbuiltins.next(*0
+.
+`- `(7"
+#array-read##array-read#*/
+-
+` `(8"
+_relateflatted._relate*3
+1
+` `(8"
+#array-write##array-write#*("
+
+a a(*_C:\Users\starr\Documents\Github\Mundos-De-Tinta\Frontend\node_modules\flatted\python\flatted.py
