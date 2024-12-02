@@ -9,18 +9,25 @@ const Login = () => {
     });
     const [mensaje, setMensaje] = useState("");
     const auth = useAuth();
+
     const handleSubmitEvent = (e) => {
         e.preventDefault();
-        if (input.username !== "" && input.password !== "") {
+        if (input.username.length >= 3 && input.password.length >= 3) {
             try {
                 auth.loginAction(input);
             } catch (error) {
                 setMensaje(error.message);
             }
-            return;
+        } else {
+            if (input.username.length < 3) {
+                setMensaje("El nombre de usuario debe tener al menos 5 caracteres.");
+            }
+            if (input.password.length < 3) {
+                setMensaje("La contraseña debe tener al menos 8 caracteres.");
+            }
         }
-        alert("El usuario y la contraseña es obligatorio");
     };
+
     const handleInput = (e) => {
         const { name, value } = e.target;
         setInput((prev) => ({
@@ -28,6 +35,7 @@ const Login = () => {
             [name]: value,
         }));
     };
+
     return (
         <main id="Fondo">
             <div id="contenedor">
