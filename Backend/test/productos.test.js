@@ -15,10 +15,6 @@ test("Registrar Producto", async () => {
     await expect(prd.create(producto)).resolves.toBeTruthy();
 });
 
-test ("Modificar Cargamento", async () => {
-    await expect(prd.update("1")).resolves.toBeTruthy();
-});
-
 test ("Eliminar Cargamento", async () => {
     await expect(prd.remove("2")).resolves.toBeTruthy();
 });

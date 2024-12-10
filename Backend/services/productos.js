@@ -31,24 +31,6 @@ async function getMultiple(page = 1) {
 
 /*---------------------------------------------------------------------*/
 
-/*async function getMultiple(page = 1) {
-  const offset = helper.getOffset(page, config.listPerPage);
-  const rows = await db.query(
-    `SELECT p.id, p.nombre, p.cantidad, p.precio_unitario, p.fecha_entrada, c.nombre
-    AS categoria
-    FROM productos p 
-    INNER JOIN categorias c
-    ON p.fk_categorias_id=c.id;`
-  );
-  const data = helper.emptyOrRows(rows);
-  const meta = { page };
-
-  return {
-    data,
-    meta,
-  };
-}*/
-
 /*-------------------------------------------------------------*/
 async function getById(id) {
   const producto = await models.productos.findOne({
@@ -74,22 +56,6 @@ async function getById(id) {
 }
 
 /*-------------------------------------------------------------*/
-
-/*async function getById(id) {
-  const row = await db.query(
-    `SELECT p.id, p.nombre, p.precio_unitario, c.nombre
-    AS Categoría
-    FROM productos p 
-    INNER JOIN categorias c
-    ON p.fk_categorias_id=c.id WHERE p.id=${id};`
-  );
-  const data = helper.emptyOrRows(row);
-
-  return {
-    data,
-  };
-}*/
-
 /*---------------------------------------------------------------------*/
 async function create(producto) {
   const categoria = await models.categorias.findOne({
@@ -119,72 +85,12 @@ async function create(producto) {
   return { message };
 }
 
-/*---------------------------------------------------------------------*/
-
-/*async function create(producto) {
-  const result = await db.query(
-    `INSERT INTO productos 
-    (nombre,cantidad,precio_unitario,fecha_entrada,fk_categorias_id)
-    VALUES
-    ("${producto.nombre}",${producto.cantidad},${producto.precio_unitario},'${producto.fecha_entrada}',(SELECT id FROM categorias WHERE nombre="${producto.Cnombre}"));`
-  );
-
-  let message = "Error al agregar el producto";
-
-  if (result.affectedRows) {
-    message = "Producto agregado";
-  }
-
-  return { message };
-}*/
-
-/*------------------------------------------------------*/
-/*async function update(id, cantidad) {
-  try {
-    console.log(id);
-    console.log(cantidad);
-    // Busca el producto por id
-    const producto = await models.productos.findOne({
-      where: { id: id } // Usa el id directamente
-    });
-    console.log(producto);
-    // Verifica si el producto existe
-    if (!producto) {
-      return { message: "Producto no encontrado" };
-    }
-
-    // Verifica si hay suficiente cantidad para actualizar
-    if (producto.cantidad > 0 && producto.cantidad >= cantidad) {
-      producto.cantidad -= cantidad; // Reduce la cantidad
-      await producto.save(); // Guarda los cambios
-
-      return { message: "Producto actualizado" };
-    } else {
-      return { message: "Cantidad insuficiente para actualizar el producto" };
-    }
-  } catch (error) {
-    console.error("Error al actualizar el producto", error.message);
-    return { message: "Error al actualizar el producto" };
-  }
-}*/
-
 
 
 /*------------------------------------------------------*/
 
 async function update(ventas) {  
 
-  //let data = await db.query(`SELECT cantidad FROM productos WHERE id=${id}`);
-  
-  // Verificar si el producto existe
-  /*if (data.length === 0) {
-    return { message: "Producto no encontrado" };
-  }*/
-
-  //let valor = data[0].cantidad;
-  
-  // Verificar si hay suficiente cantidad para actualizar
-  /*if (valor > 0 && valor >= cantidad) {*/
   for (const producto of ventas.productos) {
     const nuevaAct = {
       id: producto.id,
@@ -202,10 +108,7 @@ async function update(ventas) {
 
     let message = "Producto actualizado";
     return { message };
-  /*} else {*/
-    /*let message = "Cantidad insuficiente para actualizar el producto";
-    return { message };*/
-  /*}*/
+
 }
 
 
@@ -226,17 +129,6 @@ async function remove(id) {
 }
 /*-------------------------------------------------------------------*/
 
-/*async function remove(id) {
-  const result = await db.query(`DELETE FROM productos WHERE id=${id}`);
-
-  let message = "Error al eliminar el producto";
-
-  if (result.affectedRows) {
-    message = "Producto eliminado";
-  }
-
-  return { message };
-}*/
 
 module.exports = {
   getMultiple,

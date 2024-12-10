@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "jest": "^29.7.0",
     "react-datepicker": "^7.5.0"
   },
   "scripts": {
@@ -21,6 +20,7 @@
     ]
   },
   "devDependencies": {
+    "jest": "^29.7.0",
     "jest-sonar-reporter": "^2.0.0"
   }
 }
